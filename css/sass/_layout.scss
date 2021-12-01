@@ -94,6 +94,9 @@
   align-items: center;
 }
 
+.svg-hero {
+}
+
 @media screen and (max-width: 1200px) {
   .svg-hero {
     transform: scale(1.5) rotate(25deg);
@@ -111,6 +114,10 @@
   width: 100%;
 
   border-bottom: 1px solid $black-light;
+
+  position: relative;
+
+  z-index: -1;
 }
 
 .list-item {
@@ -127,7 +134,7 @@
   a {
     &:hover {
       & + .img-project {
-        transform: translate(-50%, -50%) translate3d(0, 0, 0);
+        transform: translate(-50%, -50%) translate3d(200px, 0, 0);
         opacity: 1;
       }
     }
