@@ -94,9 +94,6 @@
   align-items: center;
 }
 
-.svg-hero {
-}
-
 @media screen and (max-width: 1200px) {
   .svg-hero {
     transform: scale(1.5) rotate(25deg);
@@ -164,6 +161,10 @@
   padding: 16px 24px;
 }
 
+.works {
+  display: flex;
+  flex-direction: column;
+}
 // ANIMATIONS
 /*
 #bg-heroline1 {

@@ -1,144 +1,145 @@
-h1, h2, h3, h4, h5, h6, p, a{
-    font-family: 'Barlow Condensed', sans-serif;
-    color: $white-normal;
-    font-weight: 400;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: $white-normal;
+  font-weight: 400;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.link{
-    padding: 8px 24px;
-    font-size: 24px;
+.link {
+  padding: 8px 24px;
+  font-size: 24px;
 
-    display: inline-block;
+  display: inline-block;
 
-    transition: .5s ease;
+  transition: 0.5s ease;
 
-    position: relative;
+  position: relative;
 
-    &::after{
-        content: '';
-        display: block;
+  &::after {
+    content: '';
+    display: block;
 
-        position: absolute;
-        top: 100%;
-        left: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
 
-        width: 0%;
-        height: 2px;
+    width: 0%;
+    height: 2px;
 
-        transform: translate(20%, -50%);
-        transition: .5s ease ;
+    transform: translate(20%, -50%);
+    transition: 0.5s ease;
 
-        background-color: $white-normal;
+    background-color: $white-normal;
+  }
+
+  &:hover {
+    opacity: 0.8;
+
+    &::after {
+      width: 70%;
     }
-
-    &:hover{
-        opacity: .8;
-
-        &::after{
-            width: 70%;
-        }
-    }
+  }
 }
 
-h1{
-    font-size: 96px;
-    line-height: 100%;
+h1 {
+  font-size: 96px;
+  line-height: 100%;
 }
 
-@media screen and (max-width: 960px){
-    h1{
-        font-size: 64px;
-    }
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 64px;
+  }
 
-    h2{
-        font-size: 48px;
-    }
-}
-
-h2{
-    font-size: 72px;
-    line-height: 110%;
-}
-
-h3{
+  h2 {
     font-size: 48px;
-    line-height: 110%;
+  }
 }
 
-h4{
-    font-size: 32px;
-    line-height: 120%;
+h2 {
+  font-size: 72px;
+  line-height: 110%;
 }
 
-h5{
-    font-size: 24px;
-    line-height: 140%;
+h3 {
+  font-size: 48px;
+  line-height: 110%;
 }
 
-h6{
-    font-size: 18px;
-    line-height: 150%;
+h4 {
+  font-size: 32px;
+  line-height: 120%;
 }
 
-.mask{
-
-    background: linear-gradient(225deg, #2DC7ED 0%, #538BF0 100%);
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+h5 {
+  font-size: 24px;
+  line-height: 140%;
 }
 
-
-.text-center{
-    text-align: center;
+h6 {
+  font-size: 18px;
+  line-height: 150%;
 }
 
-.text-right{
-    text-align: right;
+.mask {
+  background: linear-gradient(225deg, #2dc7ed 0%, #538bf0 100%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.square{
+.text-center {
+  text-align: center;
+}
 
-    display: inline-block;
-    margin-top: 64px;
+.text-right {
+  text-align: right;
+}
 
-    font-size: 24px;
+.square {
+  display: inline-block;
+  margin-top: 64px;
 
-    padding: 16px 24px;
+  font-size: 24px;
 
-    position: relative;
+  padding: 16px 24px;
 
-    &::after{
-        content: '';
-        display: block;
+  position: relative;
 
-        position: absolute;
-        top: 0;
-        left: 0;
+  &::after {
+    content: '';
+    display: block;
 
-        z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-        width: 96px;
-        height: 96px;
+    z-index: -1;
 
-        transform: translate(5%, -15%) rotate(60deg);
+    width: 96px;
+    height: 96px;
 
-        background: linear-gradient(225deg, #2DC7ED 0%, rgba(83, 139, 240, 0) 100%);
+    transform: translate(5%, -15%) rotate(60deg);
 
-        border-radius: 4px;
-        transition: .5s ease;
+    background: linear-gradient(225deg, #2dc7ed 0%, rgba(83, 139, 240, 0) 100%);
 
+    border-radius: 4px;
+    transition: 0.5s ease;
+  }
+
+  &:hover {
+    &::after {
+      transform: translate(5%, -15%) rotate(225deg);
     }
-
-    &:hover{
-        &::after{
-            transform: translate(5%, -15%) rotate(225deg);
-    
-        }
-    
-    }
+  }
 }
