@@ -115,8 +115,15 @@
             </div>
         </div>
         <div class="container-item">
-            <img src="img/profile.jpg" class="img-photo" alt="">
+            <img src="img/profile.png" class="img-photo" alt="">
         </div>
+    </section>
+
+
+    <!-- ABOUT ME-->
+
+    <section class="container about">
+        <h2>ABOUT</h2>
     </section>
 
     <!-- SELECTED WORKS -->
@@ -127,17 +134,16 @@
         </div>
         <div class="list-item py-6">
             <h5 class="color-gray mr-2">01.</h5>
-            <a href="" target="_blank">
+            <a href="https://dogs-paulomigueljs.vercel.app/" target="_blank">
                 <h3>Dogs</h3>
             </a>
             <img src="img/pm-dogs.png" class="img-project" alt="Dogs - Social Media for Dogs">
         </div>
-
         <div class="bb-gray"></div>
 
         <div class="list-item py-6">
             <h5 class="color-gray mr-2">02.</h5>
-            <a href="" target="_blank">
+            <a href="https://paulomigueljs.github.io/devfinance/" target="_blank">
                 <h3>Dev Finance</h3>
             </a>
             <img src="img/pm-devfinance.png" class="img-project" alt="Dev Finance">
@@ -147,129 +153,39 @@
 
         <div class="list-item py-6">
             <h5 class="color-gray mr-2">03.</h5>
-            <a href="" target="_blank">
+            <a href="https://www.r3construcoes.com.br/" target="_blank">
                 <h3>R3 Contruções</h3>
             </a>
-            <img src="img/lp-spiderman.png" class="img-project" alt="">
+            <img src="img/pm-r3construcoes.png" class="img-project" alt="R3 Construções">
         </div>
 
         <div class="bb-gray"></div>
 
         <div class="list-item py-6">
             <h5 class="color-gray mr-2">04.</h5>
-            <a href="" target="_blank">
+            <a href="https://paulomigueljs.github.io/calculatortip/" target="_blank">
                 <h3>Tip Calculator</h3>
             </a>
-            <img src="img/lp-spiderman.png" class="img-project" alt="">
+            <img src="img/pm-tipcalculator.png" class="img-project" alt="Tip Calculator">
         </div>
     </section>
 
     <section class="container works mt-7">
-        <h2>Would like to see more?</h2>
+        <h2>Would you like to see more?</h2>
         <div class="mt-7">
-            <a href="" class="square">WORKS</a>
+            <a href="https://github.com/paulomiguelJS" target="_blank" class="square">WORKS</a>
         </div>
     </section>
-    <section class="get my-9" id="section-02">
+    <section class="get my-9 border" id="section-02">
         <div>
             <h2>Get in touch</h2>
         </div>
-        <div>
-            <h3 class="mt-9 mask text-center">paulomiguelblues@gmail.com</h3>
+        <div class="get-item border">
+            <address><a href="mailto:paulomiguelblues@gmail.com" taget="_blank"><img src="img/pm-gmail.svg" alt="Gmail"></a></address>
+            <a href="https://www.linkedin.com/in/paulo-miguel-b9a54697/" taget="_blank"><img src="img/pm-linkedin.svg" alt="LinkedIn">TESTE</a>
+
         </div>
     </section>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js" integrity="sha512-jNJOCd1PIjJoUa1XTDKaPdBLNUe4OJTrltKG+70O5ghYZ943nTRGIzjObwC2JtSm1fG7T06GbUApR2eirIU/jA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-    <script>
-
-        document.addEventListener('DOMContentLoaded', () => {
-            var tl = gsap.timeline();
-
-            tl
-                .from(".menu-1", {
-                    duration: 1,
-                    y: 50,
-                    opacity: 0,
-                    delay: 0.5,
-                    ease: "power3.out",
-                })
-                .from(".menu-2", {
-                    duration: 1,
-                    y: 50,
-                    opacity: 0,
-                    ease: "power3.out",
-                }, "-=0.8")
-                .from(".menu-3", {
-                    duration: 1,
-                    y: 50,
-                    opacity: 0,
-                    ease: "power3.out",
-                }, "-=0.8")
-                .from(".menu-4", {
-                    duration: 1,
-                    y: 50,
-                    opacity: 0,
-                    ease: "power3.out",
-                }, "-=0.8")
-                .from(".menu-5", {
-                    duration: 1,
-                    y: 50,
-                    opacity: 0,
-                    ease: "power3.out",
-                }, "-=0.8")
-                .from(".container-item div", {
-                    duration: 1,
-                    y: 300,
-                    opacity: 0,
-                    stagger: { each: 0.2 },
-                    ease: "power3.out",
-                }, "-=0.8")
-                .from(".container-item img", {
-                    duration: 1,
-                    y: 300,
-                    opacity: 0,
-                    ease: "power3.out",
-                }, "-=0.8")
-                .from(".bg-hero", {
-                    duration: 1,
-                    y: 300,
-                    opacity: 0,
-                    ease: "power3.out",
-                }, "-=0.8")
-
-
-            gsap.registerPlugin(ScrollTrigger);
-
-            gsap.from("#section-01 div", {
-                duration: 1,
-                y: 300,
-                opacity: 0,
-                stagger: { each: 0.2 },
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: "#section-01",
-
-                }
-            });
-
-            gsap.from("#section-02 div", {
-                duration: 1,
-                y: 300,
-                opacity: 0,
-                stagger: { each: 0.2 },
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: "#section-02",
-                }
-            });
-        })
-
-    </script>
-
-
 </body>
 
 </html>
