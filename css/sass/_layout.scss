@@ -154,7 +154,17 @@
   transform: translate(-50%, -50%) translate3d(-1000px, 0, 0) skewX(30deg);
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
 .get {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
   max-width: 1200px;
 
   margin: 0 auto;
@@ -162,13 +172,17 @@
 }
 
 .get-item {
-  
+  display: flex;
+  justify-content: space-between;
+
+  width: 150px;
 }
 
 .works {
   display: flex;
   flex-direction: column;
 }
+
 // ANIMATIONS
 /*
 #bg-heroline1 {

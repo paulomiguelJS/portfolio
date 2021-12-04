@@ -141,6 +141,11 @@ h6 {
           transform: translate(5%, -15%) rotate(225deg);
 }
 
+.about p {
+  line-height: 2;
+  font-size: 24px;
+}
+
 body {
   width: 100%;
   background-color: #050607;
@@ -930,10 +935,43 @@ body {
           transform: translate(-50%, -50%) translate3d(-1000px, 0, 0) skewX(30deg);
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .get {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px 24px;
+}
+
+.get-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 150px;
 }
 
 .works {
