@@ -122,20 +122,9 @@
   margin: 0 auto;
   padding: 16px 24px;
 
-  position: relative;
-
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
-  a {
-    &:hover {
-      & + .img-project {
-        transform: translate(-50%, -50%) translate3d(200px, 0, 0);
-        opacity: 1;
-      }
-    }
-  }
 }
 
 .img-project {
@@ -179,7 +168,16 @@
 }
 
 .svg:hover {
-  opacity: 0.7;
+  animation: up 2s ease;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
 }
 
 .works {

@@ -91,6 +91,10 @@ h6 {
   line-height: 150%;
 }
 
+.hello {
+  color: $blue-dark;
+}
+
 .mask {
   background: linear-gradient(225deg, #2dc7ed 0%, #538bf0 100%);
 
@@ -142,6 +146,10 @@ h6 {
       transform: translate(5%, -15%) rotate(225deg);
     }
   }
+}
+
+.about h2 {
+  border-bottom: 8px solid $blue-dark;
 }
 
 .about p {

@@ -97,6 +97,10 @@ h6 {
   line-height: 150%;
 }
 
+.hello {
+  color: #15AED4;
+}
+
 .mask {
   background: linear-gradient(225deg, #2dc7ed 0%, #538bf0 100%);
   -webkit-background-clip: text;
@@ -139,6 +143,10 @@ h6 {
 .square:hover::after {
   -webkit-transform: translate(5%, -15%) rotate(225deg);
           transform: translate(5%, -15%) rotate(225deg);
+}
+
+.about h2 {
+  border-bottom: 8px solid #15AED4;
 }
 
 .about p {
@@ -904,7 +912,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px 24px;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -914,12 +921,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.list-item a:hover + .img-project {
-  -webkit-transform: translate(-50%, -50%) translate3d(200px, 0, 0);
-          transform: translate(-50%, -50%) translate3d(200px, 0, 0);
-  opacity: 1;
 }
 
 .img-project {
@@ -976,7 +977,30 @@ body {
 }
 
 .svg:hover {
-  opacity: 0.7;
+  -webkit-animation: up 2s ease;
+          animation: up 2s ease;
+}
+
+@-webkit-keyframes up {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+}
+
+@keyframes up {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
 }
 
 .works {
