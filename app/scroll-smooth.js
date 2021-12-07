@@ -7,7 +7,6 @@ function scrollToSection(event) {
 
   section.scrollIntoView({
     behavior: 'smooth',
-    block: 'nearest',
   });
 }
 
