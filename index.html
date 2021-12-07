@@ -19,23 +19,25 @@
 
     <!-- HEADER -->
 
-    <header class="menu js-menu ">
-        <div class="menu-left">
-            <a href="#" class="link menu-1">Home</a>
-            <a href="#about" class="link menu-2">About</a>
-        </div>
+    <header class="menu" id="home">
+        <nav class="menu-left js-menu">
+            <a href="#home" class="link ">Home</a>
+            <a href="#about" class="link ">About</a>
+        </nav>
         <div class="menu-logo">
-            <img src="img/logo-24.png" alt="Logo Paulo Miguel">
+            <a href="#home" class=" js-menu">
+                <img src="img/logo-24.png" alt="Logo Paulo Miguel">
+            </a>
         </div>
-        <div class="menu-right">
-            <a href="#works" class="link menu-4">Works</a>
-            <a href="#getInTouch" class="link menu-5">Get in touch</a>
-        </div>
+        <nav class="menu-right js-menu">
+            <a href="#works" class="link ">Works</a>
+            <a href="#getInTouch" class="link ">Get in touch</a>
+        </nav>
     </header>
 
     <!-- BACKGROUND HERO -->
 
-    <div class="relative">
+    <div class="relative ">
         <div class="bg-hero">
             <svg class="svg-hero" viewBox="0 0 2560 1440" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="bg-hero" clip-path="url(#clip0)">
@@ -241,6 +243,8 @@
     </footer>
 
     <script src="app/scroll-animation.js"></script>
+    <script src="app/scroll-smooth.js"></script>
+
 </body>
 
 </html>

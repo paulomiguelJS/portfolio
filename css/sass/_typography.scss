@@ -15,6 +15,12 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 960px) {
+  root {
+    font-size: 93.75%;
+  }
+}
+
 .link {
   padding: 8px 24px;
   font-size: 24px;
