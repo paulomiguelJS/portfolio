@@ -145,10 +145,6 @@ h6 {
           transform: translate(5%, -15%) rotate(225deg);
 }
 
-.about h2 {
-  border-bottom: 8px solid #15AED4;
-}
-
 .about p {
   line-height: 2;
   font-size: 24px;
