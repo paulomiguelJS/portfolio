@@ -64,7 +64,7 @@ a {
   width: 70%;
 }
 
-*.footer-nav-item {
+.footer-nav-item {
   padding: 8px 8px;
   font-size: 16px;
   display: inline-block;
@@ -73,7 +73,7 @@ a {
   position: relative;
 }
 
-*.footer-nav-item::after {
+.footer-nav-item::after {
   content: '';
   display: block;
   position: absolute;
@@ -88,11 +88,11 @@ a {
   background-color: #F5F7F7;
 }
 
-*.footer-nav-item:hover {
+.footer-nav-item:hover {
   opacity: 0.8;
 }
 
-*.footer-nav-item:hover::after {
+.footer-nav-item:hover::after {
   width: 70%;
 }
 
