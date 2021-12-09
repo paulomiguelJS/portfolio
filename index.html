@@ -20,10 +20,10 @@
 
     <!-- HEADER -->
 
-    <header class="menu" id="home">
-        <nav class="menu-left js-menu">
-            <a href="#home" class="link ">Home</a>
-            <a href="#about" class="link ">About</a>
+    <header class="menu" id="animeElement " ">
+        <nav class=" menu-left js-menu" id="home">
+        <a href="#home" class="link">Home</a>
+        <a href="#about" class="link">About</a>
         </nav>
         <div class="menu-logo">
             <a href="#home" class=" js-menu">
@@ -38,7 +38,7 @@
 
     <!-- BACKGROUND HERO -->
 
-    <div class="relative ">
+    <div class="relative " id="animeElement">
         <div class="bg-hero">
             <svg class="svg-hero" viewBox="0 0 2560 1440" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="bg-hero" clip-path="url(#clip0)">
@@ -107,7 +107,7 @@
     </div>
 
     <!-- HERO -->
-    <section class="container hero  ">
+    <section class="container hero" id="animeElement">
         <div class="container-item">
             <div>
                 <h5 class="hello">HI, I'M</h5>
@@ -239,12 +239,23 @@
     <!-- FOOTER -->
 
     <footer class="container  footer mt-7 mb-7">
-        <img class=" mb-2" src="img/logo-24.png" alt="Logo">
-        <p class=""> Paulo Miguel©2021</p>
+        <a href="#home" class=" js-menu">
+            <img src="img/logo-24.png" alt="Logo Paulo Miguel">
+        </a>
+
+        <p class="mt-4">© 2021 - Paulo Miguel</p>
+        <nav class="mt-3 nav-footer">
+            <a href="#home" class="footer-nav-item">Home</a>
+            <a href="#about" class="footer-nav-item">About</a>
+            <a href="#works" class="footer-nav-item">Works</a>
+            <a href="#getInTouch" class="footer-nav-item">Get in touch</a>
+        </nav>
+
     </footer>
 
     <script src="app/scroll-animation.js"></script>
     <script src="app/scroll-smooth.js"></script>
+    <script src="app/elements-animation.js"></script>
 
 </body>
 

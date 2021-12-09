@@ -57,6 +57,42 @@ a {
   }
 }
 
+*.footer-nav-item {
+  padding: 8px 8px;
+  font-size: 16px;
+
+  display: inline-block;
+
+  transition: 0.5s ease;
+
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 0%;
+    height: 2px;
+
+    transform: translate(20%, -50%);
+    transition: 0.5s ease;
+
+    background-color: $white-normal;
+  }
+
+  &:hover {
+    opacity: 0.8;
+
+    &::after {
+      width: 70%;
+    }
+  }
+}
+
 h1 {
   font-size: 96px;
   line-height: 100%;

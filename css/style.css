@@ -64,6 +64,38 @@ a {
   width: 70%;
 }
 
+*.footer-nav-item {
+  padding: 8px 8px;
+  font-size: 16px;
+  display: inline-block;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  position: relative;
+}
+
+*.footer-nav-item::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  -webkit-transform: translate(20%, -50%);
+          transform: translate(20%, -50%);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: #F5F7F7;
+}
+
+*.footer-nav-item:hover {
+  opacity: 0.8;
+}
+
+*.footer-nav-item:hover::after {
+  width: 70%;
+}
+
 h1 {
   font-size: 96px;
   line-height: 100%;
