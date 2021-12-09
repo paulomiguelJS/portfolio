@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
 </head>
 
 <body>
@@ -20,19 +22,26 @@
     <!-- HEADER -->
 
     <header class="menu" id="animeElement " ">
-        <nav class=" menu-left js-menu" id="home">
+        <nav class=" menu-left js-menu navBar" id="home">
         <a href="#home" class="link menu-1">Home</a>
         <a href="#about" class="link menu-2">About</a>
         </nav>
         <div class="menu-logo menu-3">
-            <a href="#home" class=" js-menu">
+            <a href="#home" class=" js-menu  ">
                 <img src="img/logo-24.png" alt="Logo Paulo Miguel">
             </a>
         </div>
-        <nav class="menu-right js-menu">
+        <nav class="menu-right js-menu navBar">
             <a href="#works" class="link menu-4">Works</a>
             <a href="#getInTouch" class="link menu-5">Get in touch</a>
         </nav>
+
+        <label for="check" class="hamburguer active">
+            <input type="checkbox" id="check" class="hamburguer-check" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
     </header>
 
     <!-- BACKGROUND HERO -->
@@ -254,11 +263,7 @@
     <script src="app/scroll-animation.js"></script>
     <script src="app/scroll-smooth.js"></script>
     <script src="app/elements-animation.js"></script>
-    <script src="app/elements-animation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-
-
-
+    <script src="app/hamburguer-menu.js"></script>
 
 </body>
 

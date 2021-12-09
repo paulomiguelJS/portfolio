@@ -16,12 +16,108 @@
   */
 }
 
+.hamburguer {
+  position: relative;
+  display: none;
+
+  width: 35px;
+  height: 35px;
+
+  cursor: pointer;
+}
+
+.hamburguer span {
+  display: block;
+
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+
+  position: relative;
+
+  background: #fff;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.hamburguer-check[type='checkbox'] {
+  display: none;
+}
+
+.hamburguer-check[type='checkbox']:checked ~ span:nth-of-type(1) {
+  transform-origin: bottom;
+  transform: rotatez(45deg) translate(5px, 5px);
+}
+
+.hamburguer-check[type='checkbox']:checked ~ span:nth-of-type(2) {
+  transform-origin: top;
+  transform: rotatez(-45deg) translate(0px, 0px);
+}
+
+.hamburguer-check[type='checkbox']:checked ~ span:nth-of-type(3) {
+  opacity: 0;
+  transform-origin: bottom;
+  transform: translate(45px, 40px) rotatez(5deg);
+  transition: 100ms;
+}
+
+.hamburguer span:first-child {
+  transform-origin: 0% 0%;
+}
+
+.hamburguer span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+.hamburguer:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #fff;
+}
+
+.hamburguer:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.hamburguer:checked ~ span:nth-last-child(2) {
+  transform: rotate(-2255deg) translate(0, -1px);
+}
+
 @media screen and (max-width: 960px) {
-  .menu-left {
-    display: none;
+  .hamburguer {
+    display: block;
+    z-index: 2;
   }
-  .menu-right {
-    display: none;
+
+  .navBar {
+    position: fixed;
+    right: -100%;
+    top: 0;
+
+    z-index: 0;
+
+    height: 100vh;
+    width: 100%;
+
+    transition: all 500ms ease-in-out;
+  }
+
+  .menu-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navBar.active {
+    right: 0;
+    top: 0;
   }
 }
 
@@ -198,7 +294,6 @@
   flex-direction: column;
 }
 
-
 // ANIMATIONS
 
 .js-scroll {
@@ -216,7 +311,6 @@
 
   transition: 0.3s;
 }
-
 
 /*
 #bg-heroline1 {
