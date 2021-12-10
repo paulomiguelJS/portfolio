@@ -814,13 +814,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 48px 16px;
+  padding: 32px 16px;
   background-color: #050607;
-  /*
   position: fixed;
   top: 0;
   z-index: 1000;
-  */
 }
 
 .hamburguer {
@@ -904,6 +902,23 @@ body {
           transform: rotate(-2255deg) translate(0, -1px);
 }
 
+nav {
+  width: 100%;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
 @media screen and (max-width: 960px) {
   .hamburguer {
     display: block;
@@ -913,47 +928,53 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: fixed;
     right: -100%;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.9;
     height: 100vh;
     width: 100%;
     -webkit-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
   }
-  .menu-left {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .menu-logo {
+    display: none;
   }
-  .menu-right {
+  .navBarItem {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 90px;
+    width: 100%;
+  }
+  .navBarItem a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: 1px solid #F5F7F7;
+    width: 50%;
+    padding: 32px;
   }
   .navBar.active {
     right: 0;

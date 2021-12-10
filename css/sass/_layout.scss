@@ -7,15 +7,13 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 48px 16px;
+  padding: 32px 16px;
 
   background-color: $black-dark;
 
-  /*
   position: fixed;
   top: 0;
   z-index: 1000;
-  */
 }
 
 .hamburguer {
@@ -92,6 +90,17 @@
   transform: rotate(-2255deg) translate(0, -1px);
 }
 
+nav {
+  width: 100%;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 @media screen and (max-width: 960px) {
   .hamburguer {
     display: block;
@@ -100,16 +109,17 @@
 
   .navBar {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     position: fixed;
     right: -100%;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.9;
 
     height: 100vh;
     width: 100%;
@@ -117,18 +127,25 @@
     transition: all 500ms ease-in-out;
   }
 
-  .menu-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .menu-logo {
+    display: none;
   }
 
-  .menu-right {
+  .navBarItem {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
 
-    margin-top: 90px;
+    width: 100%;
+  }
+
+  .navBarItem a {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $white-normal;
+    width: 50%;
+
+    padding: 32px;
   }
 
   .navBar.active {

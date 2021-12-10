@@ -1,9 +1,7 @@
 const hamburguer = document.querySelector('.hamburguer-check');
 
-const navBar = document.querySelectorAll('.navBar');
+const navBar = document.querySelector('.navBar');
 
 hamburguer.addEventListener('click', () => {
-  navBar.forEach((e) => {
-    e.classList.toggle('active');
-  });
+  navBar.classList.toggle('active');
 });

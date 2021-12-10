@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Paulo Miguel - DEV</title>
+    <title>Paulo Miguel - Front-End Developer</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,26 +14,29 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-
 </head>
 
 <body>
 
     <!-- HEADER -->
 
-    <header class="menu" id="animeElement " ">
-        <nav class=" menu-left js-menu navBar" id="home">
-        <a href="#home" class="link menu-1">Home</a>
-        <a href="#about" class="link menu-2">About</a>
-        </nav>
-        <div class="menu-logo menu-3">
-            <a href="#home" class=" js-menu  ">
-                <img src="img/logo-24.png" alt="Logo Paulo Miguel">
-            </a>
-        </div>
-        <nav class="menu-right js-menu navBar">
-            <a href="#works" class="link menu-4">Works</a>
-            <a href="#getInTouch" class="link menu-5">Get in touch</a>
+    <header class="menu" id="animeElement">
+        <nav>
+            <ul class="js-menu navBar navBarItem">
+                <li class="navBarItem">
+                    <a href="./" class="link menu-1">Home</a>
+                    <a href="#about" class="link menu-2">About</a>
+                </li>
+                <li class="menu-logo menu-3">
+                    <a href="./" class="js-menu">
+                        <img src="img/logo-24.png" alt="Logo Paulo Miguel">
+                    </a>
+                </li>
+                <li class="navBarItem">
+                    <a href="#works" class="link menu-4 ">Works</a>
+                    <a href="#getInTouch" class="link menu-5">Get in touch</a>
+                </li>
+            </ul>
         </nav>
 
         <label for="check" class="hamburguer active">
@@ -116,23 +119,22 @@
 
     <!-- HERO -->
     <section class="container hero" id="animeElement">
-        <div class="container-item">
-            <div>
+        <ul class="container-item">
+            <li>
                 <h5 class="hello">HI, I'M</h5>
                 <h1>Paulo Miguel</h1>
-            </div>
-            <div>
+            </li>
+            <li>
                 <h2 class="mask text-right mt-7  ">Front-End Developer</h2>
-            </div>
-            <div>
+            </li>
+            <li>
                 <h2 class="mask">Creative Developer</h2>
-            </div>
-        </div>
+            </li>
+        </ul>
         <div class="container-item">
             <img src="img/profile.png" class="img-photo" alt="Profile">
         </div>
     </section>
-
 
     <!-- ABOUT ME-->
 
@@ -247,13 +249,13 @@
     <!-- FOOTER -->
 
     <footer class="container  footer mt-7 mb-7">
-        <a href="#home" class=" js-menu">
+        <a href="./" class=" js-menu">
             <img src="img/logo-24.png" alt="Logo Paulo Miguel">
         </a>
 
         <p class="mt-4">© 2021 - Paulo Miguel</p>
         <nav class="mt-3 nav-footer">
-            <a href="#home" class="footer-nav-item">Home</a>
+            <a href="#" class="footer-nav-item">Home</a>
             <a href="#about" class="footer-nav-item">About</a>
             <a href="#works" class="footer-nav-item">Works</a>
             <a href="#getInTouch" class="footer-nav-item">Get in touch</a>
