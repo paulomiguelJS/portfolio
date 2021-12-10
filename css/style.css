@@ -814,11 +814,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 32px 16px;
+  padding: 48px 16px;
   background-color: #050607;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 999;
 }
 
 .hamburguer {
@@ -950,7 +951,10 @@ nav {
     transition: all 500ms ease-in-out;
   }
   .menu-logo {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px;
   }
   .navBarItem {
     display: -webkit-box;
@@ -1215,6 +1219,18 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.nav-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer {

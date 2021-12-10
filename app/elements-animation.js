@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
       '-=0.8',
     )
     .from(
-      '.container-item div',
+      '.container-item li',
       {
         duration: 1,
         y: 300,
