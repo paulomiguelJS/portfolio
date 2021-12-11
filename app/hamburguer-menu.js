@@ -1,6 +1,6 @@
 const hamburguer = document.querySelector('.hamburguer-check');
 
-const navBar = document.querySelector('.navBar');
+const navBar = document.querySelector('#navBar');
 
 const links = document.querySelectorAll('.link');
 
