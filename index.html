@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Paulo Miguel - Front-End Developer" />
+    <meta property="og:description" content="Paulo Miguel - Front-End Developer" />
+    <meta property="og:image" content="https://www.paulomiguel.dev/img/logo-24.png" />
 
     <title>Paulo Miguel - Front-End Developer</title>
 
@@ -12,10 +15,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <meta property="og:title" content="Paulo Miguel - Front-End Developer" />
-    <meta property="og:description" content="Paulo Miguel - Front-End Developer" />
-    <meta property="og:image" content="img/logo-24.png" />
+
+
+
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 </head>
 
@@ -23,31 +27,48 @@
 
     <!-- HEADER -->
 
-    <header class="menu" id="animeElement">
-        <nav>
-            <ul class="js-menu navBar navBarItem">
-                <li class="navBarItem">
-                    <a href="#home" class="link menu-1">Home</a>
-                    <a href="#about" class="link menu-2">About</a>
-                </li>
+    <header id="animeElement">
+        <div class="desktop menu">
+            <nav>
+                <ul class="js-menu navBar ">
+                    <li>
+                        <a href="#home" class="link menu-1">Home</a>
+                        <a href="#about" class="link menu-2">About</a>
+                    </li>
+                    <li class="menu-logo menu-3">
+                        <a href="./">
+                            <img src="img/logo-24.png" alt="Logo Paulo Miguel">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#works" class="link menu-4 ">Works</a>
+                        <a href="#getInTouch" class="link menu-5">Get in touch</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
-                <li class="menu-logo menu-3">
-                    <img src="img/logo-24.png" alt="Logo Paulo Miguel">
-                    </a>
-                </li>
-                <li class="navBarItem">
-                    <a href="#works" class="link menu-4 ">Works</a>
-                    <a href="#getInTouch" class="link menu-5">Get in touch</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="mobile">
+            <nav class="navBar">
+                <div><img src="img/logo-24.png" alt=""></div>
+                <ul>
+                    <li><a href="#home" class="link menu-1">Home</a></li>
+                    <li><a href="#about" class="link menu-2">About</a></li>
+                    <li><a href="#works" class="link menu-4 ">Works</a></li>
+                    <li><a href="#getInTouch" class="link menu-5">Get in touch</a></li>
+                </ul>
+            </nav>
 
-        <label for="check" class="hamburguer active">
-            <input type="checkbox" id="check" class="hamburguer-check" />
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+            <label for="check" class="hamburguer active">
+                <input type="checkbox" id="check" class="hamburguer-check" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+
+
     </header>
 
     <!-- BACKGROUND HERO -->
@@ -257,7 +278,7 @@
         </a>
 
         <p class="mt-4">© 2021 - Paulo Miguel</p>
-        <nav class="mt-3 nav-footer">
+        <nav class="mt-3 nav-footer js-menu">
             <a href="#home" class="footer-nav-item">Home</a>
             <a href="#about" class="footer-nav-item">About</a>
             <a href="#works" class="footer-nav-item">Works</a>

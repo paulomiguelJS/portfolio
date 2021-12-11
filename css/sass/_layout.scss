@@ -16,80 +16,6 @@
   z-index: 999;
 }
 
-.hamburguer {
-  position: relative;
-  display: none;
-
-  width: 35px;
-  height: 35px;
-
-  cursor: pointer;
-}
-
-.hamburguer span {
-  display: block;
-
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-
-  position: relative;
-
-  background: #fff;
-  border-radius: 3px;
-
-  z-index: 1;
-
-  transform-origin: 4px 0px;
-
-  transition: transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-}
-
-.hamburguer-check[type='checkbox'] {
-  display: none;
-}
-
-.hamburguer-check[type='checkbox']:checked ~ span:nth-of-type(1) {
-  transform-origin: bottom;
-  transform: rotatez(45deg) translate(5px, 5px);
-}
-
-.hamburguer-check[type='checkbox']:checked ~ span:nth-of-type(2) {
-  transform-origin: top;
-  transform: rotatez(-45deg) translate(0px, 0px);
-}
-
-.hamburguer-check[type='checkbox']:checked ~ span:nth-of-type(3) {
-  opacity: 0;
-  transform-origin: bottom;
-  transform: translate(45px, 40px) rotatez(5deg);
-  transition: 100ms;
-}
-
-.hamburguer span:first-child {
-  transform-origin: 0% 0%;
-}
-
-.hamburguer span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-
-.hamburguer:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #fff;
-}
-
-.hamburguer:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-.hamburguer:checked ~ span:nth-last-child(2) {
-  transform: rotate(-2255deg) translate(0, -1px);
-}
-
 nav {
   width: 100%;
 }
@@ -101,60 +27,29 @@ nav {
   width: 100%;
 }
 
+.mobile {
+  display: none;
+}
+
+.hamburguer-check[type='checkbox'] {
+  display: none;
+}
+
 @media screen and (max-width: 960px) {
-  .hamburguer {
-    display: block;
-    z-index: 3;
+  .desktop {
+    display: none;
   }
 
-  .navBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    position: fixed;
-    right: -100%;
-    top: 0;
-    z-index: 2;
-
-    background-color: black;
-    opacity: 0.9;
-
-    height: 100vh;
-    width: 100%;
-
-    transition: all 500ms ease-in-out;
-  }
-
-  .menu-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    padding: 40px;
-  }
-
-  .navBarItem {
+  .mobile {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
 
     width: 100%;
-  }
 
-  .navBarItem a {
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid $white-normal;
-    width: 50%;
+    border: 1px solid red;
 
-    padding: 32px;
-  }
-
-  .navBar.active {
-    right: 0;
-    top: 0;
+    padding: 24px;
   }
 }
 

@@ -822,87 +822,6 @@ body {
   z-index: 999;
 }
 
-.hamburguer {
-  position: relative;
-  display: none;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-}
-
-.hamburguer span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #fff;
-  border-radius: 3px;
-  z-index: 1;
-  -webkit-transform-origin: 4px 0px;
-          transform-origin: 4px 0px;
-  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  transition: transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-
-.hamburguer-check[type='checkbox'] {
-  display: none;
-}
-
-.hamburguer-check[type='checkbox']:checked ~ span:nth-of-type(1) {
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-transform: rotatez(45deg) translate(5px, 5px);
-          transform: rotatez(45deg) translate(5px, 5px);
-}
-
-.hamburguer-check[type='checkbox']:checked ~ span:nth-of-type(2) {
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  -webkit-transform: rotatez(-45deg) translate(0px, 0px);
-          transform: rotatez(-45deg) translate(0px, 0px);
-}
-
-.hamburguer-check[type='checkbox']:checked ~ span:nth-of-type(3) {
-  opacity: 0;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-transform: translate(45px, 40px) rotatez(5deg);
-          transform: translate(45px, 40px) rotatez(5deg);
-  -webkit-transition: 100ms;
-  transition: 100ms;
-}
-
-.hamburguer span:first-child {
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.hamburguer span:nth-last-child(2) {
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
-}
-
-.hamburguer:checked ~ span {
-  opacity: 1;
-  -webkit-transform: rotate(45deg) translate(-2px, -1px);
-          transform: rotate(45deg) translate(-2px, -1px);
-  background: #fff;
-}
-
-.hamburguer:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-          transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-.hamburguer:checked ~ span:nth-last-child(2) {
-  -webkit-transform: rotate(-2255deg) translate(0, -1px);
-          transform: rotate(-2255deg) translate(0, -1px);
-}
-
 nav {
   width: 100%;
 }
@@ -920,69 +839,31 @@ nav {
   width: 100%;
 }
 
+.mobile {
+  display: none;
+}
+
+.hamburguer-check[type='checkbox'] {
+  display: none;
+}
+
 @media screen and (max-width: 960px) {
-  .hamburguer {
-    display: block;
-    z-index: 3;
+  .desktop {
+    display: none;
   }
-  .navBar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: fixed;
-    right: -100%;
-    top: 0;
-    z-index: 2;
-    background-color: black;
-    opacity: 0.9;
-    height: 100vh;
-    width: 100%;
-    -webkit-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
-  }
-  .menu-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 40px;
-  }
-  .navBarItem {
+  .mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
-  }
-  .navBarItem a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border-bottom: 1px solid #F5F7F7;
-    width: 50%;
-    padding: 32px;
-  }
-  .navBar.active {
-    right: 0;
-    top: 0;
+    border: 1px solid red;
+    padding: 24px;
   }
 }
 
