@@ -18,7 +18,7 @@ h6,
 p,
 a {
   font-family: 'Barlow Condensed', sans-serif;
-  color: #F5F7F7;
+  color: #f5f7f7;
   font-weight: 400;
 }
 
@@ -53,7 +53,7 @@ a {
           transform: translate(20%, -50%);
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  background-color: #F5F7F7;
+  background-color: #f5f7f7;
 }
 
 .link:hover {
@@ -85,7 +85,7 @@ a {
           transform: translate(20%, -50%);
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  background-color: #F5F7F7;
+  background-color: #f5f7f7;
 }
 
 .footer-nav-item:hover {
@@ -136,7 +136,7 @@ h6 {
 }
 
 .hello {
-  color: #15AED4;
+  color: #15aed4;
 }
 
 .mask {
@@ -861,7 +861,7 @@ nav {
   bottom: 10px;
   width: 40px;
   height: 40px;
-  background: #15AED4;
+  background: #3193eb;
   -webkit-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
   -webkit-transition: -webkit-transform 1s ease;
@@ -874,7 +874,7 @@ nav {
 }
 
 .btnScrolltoTop:hover {
-  background-color: #4DDCFF;
+  background-color: #15aed4;
   cursor: pointer;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
@@ -907,6 +907,10 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 999;
     padding: 16px;
   }
   .navBar {
@@ -1142,7 +1146,7 @@ nav {
 
 .bb-gray {
   width: 100%;
-  border-bottom: 1px solid #15171A;
+  border-bottom: 1px solid #15171a;
 }
 
 .list-item {
