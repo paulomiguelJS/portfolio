@@ -88,6 +88,8 @@ nav {
     top: 0;
     z-index: 999;
     padding: 16px;
+
+    cursor: pointer;
   }
 
   .navBar {
@@ -128,78 +130,26 @@ nav {
     margin-bottom: 30px;
   }
 
-  .hamburguer {
-    position: relative;
-    display: block;
-
-    width: 35px;
-    height: 35px;
-
-    cursor: pointer;
-  }
-
-  .hamburguer span {
-    display: block;
-
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-
-    position: relative;
-
-    background: #fff;
-    border-radius: 3px;
-
-    z-index: 3;
-
-    transform-origin: 4px 0px;
-
-    transition: transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  }
-
-  .hamburguer-check[type='checkbox'] {
-    display: none;
-  }
-
-  .hamburguer-check[type='checkbox']:checked ~ span:nth-of-type(1) {
-    transform-origin: bottom;
-    transform: rotatez(45deg) translate(5px, 5px);
-  }
-
-  .hamburguer-check[type='checkbox']:checked ~ span:nth-of-type(2) {
-    transform-origin: top;
-    transform: rotatez(-45deg) translate(0px, 0px);
-  }
-
-  .hamburguer-check[type='checkbox']:checked ~ span:nth-of-type(3) {
+  .hamburger.active .bar:nth-child(2) {
     opacity: 0;
-    transform-origin: bottom;
-    transform: translate(45px, 40px) rotatez(5deg);
-    transition: 100ms;
   }
-
-  .hamburguer span:first-child {
-    transform-origin: 0% 0%;
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
   }
-
-  .hamburguer span:nth-last-child(2) {
-    transform-origin: 0% 100%;
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: white;
 
-  .hamburguer:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #fff;
-  }
-
-  .hamburguer:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-
-  .hamburguer:checked ~ span:nth-last-child(2) {
-    transform: rotate(-2255deg) translate(0, -1px);
+    position: relative;
+    z-index: 999;
   }
 }
 

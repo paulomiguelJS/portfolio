@@ -1,17 +1,16 @@
-const hamburguer = document.querySelector('.hamburguer-check');
-
-const navBar = document.querySelector('#navBar');
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('#navMenu');
 
 const links = document.querySelectorAll('.link');
 
-hamburguer.addEventListener('click', () => {
-  navBar.classList.toggle('active');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
 });
 
-links.forEach((link) => {
-  link.addEventListener('click', () => {
-    navBar.classList.remove('active');
-  });
-});
-
-initScroll();
+links.forEach((n) =>
+  n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+  }),
+);
