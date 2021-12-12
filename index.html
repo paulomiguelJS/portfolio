@@ -49,8 +49,14 @@
         </div>
 
         <div class="mobile">
-            <nav>
-                <div><img src="img/logo-24.png" alt=""></div>
+            <nav class="menuMobile">
+                <a href="./"><img src="img/logo-24.png" alt=""></a>
+                <label for="check" class="hamburguer active">
+                    <input type="checkbox" id="check" class="hamburguer-check" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
                 <ul class="js-menu navBar" id="navBar">
                     <li><a href="#home" class="link menu-1">Home</a></li>
                     <li><a href="#about" class="link menu-2">About</a></li>
@@ -59,12 +65,7 @@
                 </ul>
             </nav>
 
-            <label for="check" class="hamburguer active">
-                <input type="checkbox" id="check" class="hamburguer-check" />
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+
         </div>
 
 
@@ -285,6 +286,10 @@
             <a href="#getInTouch" class="footer-nav-item">Get in touch</a>
         </nav>
     </footer>
+
+    <button class="btnScrolltoTop">
+        <img src="img/pm-scrolltotop.svg">
+    </button>
 
     <script src="app/scroll-animation.js"></script>
     <script src="app/scroll-smooth.js"></script>

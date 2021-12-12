@@ -13,3 +13,5 @@ links.forEach((link) => {
     navBar.classList.remove('active');
   });
 });
+
+initScroll();

@@ -804,7 +804,6 @@ body {
 }
 
 .menu {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -815,9 +814,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 48px 16px;
+  width: 100%;
   background-color: #050607;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 999;
 }
@@ -847,6 +846,40 @@ nav {
   display: none;
 }
 
+.btnScrolltoTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  background: #15AED4;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+
+.btnScrolltoTop:hover {
+  background-color: #4DDCFF;
+  cursor: pointer;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
 @media screen and (max-width: 960px) {
   .desktop {
     display: none;
@@ -861,8 +894,20 @@ nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 24px 0;
     width: 100%;
-    padding: 24px;
+  }
+  .menuMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 16px;
   }
   .navBar {
     display: -webkit-box;
@@ -881,7 +926,7 @@ nav {
     position: fixed;
     right: -100%;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: black;
     opacity: 0.9;
     height: 100vh;
@@ -1181,31 +1226,19 @@ nav {
   width: 150px;
 }
 
-.svg:hover {
-  -webkit-animation: up 2s ease;
-          animation: up 2s ease;
+.get-item a,
+.get-item address {
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
-@-webkit-keyframes up {
-  0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-  50% {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
-  }
-}
-
-@keyframes up {
-  0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-  50% {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
-  }
+.get-item a:hover,
+.get-item address:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .works {
