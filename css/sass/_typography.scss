@@ -15,16 +15,10 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 960px) {
-  root {
-    font-size: 93.75%;
-  }
-}
-
 .link {
   padding: 8px 24px;
 
-  font-size: 24px;
+  font-size: 1.2rem;
 
   display: inline-block;
 
@@ -60,7 +54,7 @@ a {
 
 .footer-nav-item {
   padding: 8px 8px;
-  font-size: 16px;
+  font-size: 1em;
 
   display: inline-block;
 
@@ -95,43 +89,39 @@ a {
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 5rem;
   line-height: 100%;
 }
 
-@media screen and (max-width: 960px) {
-  h1 {
-    font-size: 64px;
-  }
-
-  h2 {
-    font-size: 48px;
-  }
-}
-
 h2 {
-  font-size: 72px;
+  font-size: 4rem;
   line-height: 110%;
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 110%;
 }
 
 h4 {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 120%;
 }
 
 h5 {
-  font-size: 24px;
+  font-size: 1rem;
   line-height: 140%;
 }
 
 h6 {
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 150%;
+}
+
+.about p {
+  line-height: 2;
+  font-size: 1.5rem;
+  color: #a5a6a8;
 }
 
 .hello {
@@ -157,7 +147,7 @@ h6 {
   display: inline-block;
   margin-top: 64px;
 
-  font-size: 24px;
+  font-size: 1.5rem;
 
   padding: 16px 24px;
 
@@ -191,8 +181,26 @@ h6 {
   }
 }
 
-.about p {
-  line-height: 2;
-  font-size: 24px;
-  color: #a5a6a8;
+@media screen and (max-width: 960px) {
+  :root {
+    font-size: 93.75%;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .square {
+    font-size: 1rem;
+
+    &::after {
+      width: 70px;
+      height: 70px;
+    }
+  }
 }
