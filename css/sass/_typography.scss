@@ -145,8 +145,8 @@ h6 {
 
 .square {
   display: inline-block;
-  margin-top: 64px;
 
+  margin: 90px 0;
   font-size: 1.5rem;
 
   padding: 16px 24px;
@@ -198,7 +198,7 @@ h6 {
   .square {
     font-size: 1rem;
 
-    margin-top: 40px;
+    margin: 56px 0;
 
     &::after {
       width: 70px;
