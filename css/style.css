@@ -191,7 +191,6 @@ h6 {
   }
   .square {
     font-size: 1rem;
-    margin: 56px 0;
   }
   .square::after {
     width: 70px;
