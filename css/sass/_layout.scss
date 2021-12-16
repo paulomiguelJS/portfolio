@@ -81,7 +81,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    background-color: black;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 128%);
 
     position: fixed;
     top: 0;
@@ -102,8 +102,7 @@ nav {
     top: 0;
     z-index: 2;
 
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 128%);
-
+    background-color: black;
     opacity: 0.9;
 
     height: 100vh;
