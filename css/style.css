@@ -823,13 +823,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 32px 16px;
+  padding: 24px 16px;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(128%, rgba(0, 0, 0, 0)));
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 128%);
   position: fixed;
   top: 0;
   z-index: 999;
+}
+
+.menu-logo {
+  width: 50px;
+  height: 50px;
 }
 
 nav {
@@ -925,6 +930,10 @@ nav {
     z-index: 999;
     padding: 16px;
     cursor: pointer;
+  }
+  .menu-logo {
+    width: 40px;
+    height: 40px;
   }
   .navBar {
     display: -webkit-box;
